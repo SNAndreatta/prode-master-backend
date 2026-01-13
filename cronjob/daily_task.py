@@ -23,11 +23,12 @@ async def get_valkey_client():
     return valkey.from_url(valkey_uri)
 
 async def update_database(arg_timezone, load_last_run_datetime, save_last_run_datetime):
+    """
     load_dotenv()
     api = os.getenv("API_ENDPOINT")
     async for bd in get_db():
         db = bd
-    
+
     client = await get_valkey_client()
 
     valkey = fixture_valkey.FixtureValkey(client)
@@ -57,3 +58,4 @@ async def update_database(arg_timezone, load_last_run_datetime, save_last_run_da
                 continue
     except Exception as e:
         print(f"Error running prediction scoring in daily task: {e}")
+    """
